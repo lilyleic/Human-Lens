@@ -73,22 +73,57 @@ https://www.blender.org
 ![B9780323036566500160_f11-07-9780323036566](https://user-images.githubusercontent.com/106686527/175158656-81abdab4-ea4d-401e-aa37-2cc60d882b69.jpg)
 https://entokey.com/the-lens/
 
-### Sketch Suture Lines on Lens
-![Screen Shot 2022-06-22 at 2 29 22 PM](https://user-images.githubusercontent.com/106686527/175160297-06df03cd-8796-47c0-bc0d-fd4a658910cd.png)
-![Screen Shot 2022-06-19 at 9 14 13 PM](https://user-images.githubusercontent.com/106686527/175160228-b00aef88-0541-41b6-a8d6-20b3faa0edc8.png)
-![Screen Shot 2022-06-22 at 11 56 32 AM](https://user-images.githubusercontent.com/106686527/175160557-c1ba83ec-252f-452b-8ca4-426a1c653c5a.png)
+### Making the Main Anterior (front-facing) Suture Lines
+![Screen Shot 2022-06-22 at 2 02 29 PM](https://user-images.githubusercontent.com/106686527/175756017-28990a66-cb20-4f66-915f-4f2613b9f253.png)
+- Switch back to the “Viewport Shading” view (second sphere in the top right).
+- Switch from “Object Mode” to “Edit Mode” in the top left.
+- Click away from the object or press Alt+A to deselect the object.
+- Orient yourself so that you’re facing the flatter part of the lens (I’ve found that using the X-Y-Z tool in the upper right is helpful; for me, I clicked X to face the flat part of my lens).
+- Using the annotation tool, draw a Y shape centered on the center of the circle. 
+- Go up and click “Note” in the upper left corner right next to annotation and whatever color your pen is at the moment.
+- Change the name of the annotation from “Annotation” to “Anterior Suture Lines,” you should be able to do this from the first box.
 
+![Screen Shot 2022-06-24 at 9 24 55 PM](https://user-images.githubusercontent.com/106686527/175756395-d0da2c42-50bc-42bf-bdfb-e728675d85c7.png)
+- Using the knife tool, cut out your Y. I did one cut above each part of the upper half of the Y, and two cuts surrounding the bottom half. 
+- I only outlined the sides of the Y because now we will change the material of those sections.
+- In the properties editor, click on the bottom most red sphere (“Material Properties”) and click on the plus sign next to your array of already there materials. 
+- Then, select the “New” button.
+- Name this new material “Suture Lines.”
+- As with the lens material, change the surface setting to “Refraction BSDF,” roughness to zero, but now, set the IOR to 1.
+- In the upper right corner with the three sets of cubes, select the third one from the left (where the entire face of the cube is highlighted). This will make it so that you are selecting faces as opposed to vertices or points.
+- Holding the shift key, select all of the faces in your Y-shape.
+- Then, making sure they are all still selected, click on the “Assign” button just below your materials. This will make it so that the faces you just selected are now in this material. 
+- If you want to double-check that the Suture Line material was assigned, you can click on “Select” which will select all surfaces with that material.
+- In the viewport shading, you will see something like this.
+![Screen Shot 2022-06-22 at 2 17 40 PM](https://user-images.githubusercontent.com/106686527/175756110-aad8aaeb-7411-462e-8eee-218d71abc7ce.png)
 
+### Making the Main Posterior (back-facing) Suture Lines
+- Go to the other side of the lens (the more curved part).
+- We will want to make another annotation for the other side’s suture lens, so click on the annotation tool again, go back to “Note,” and click on the two pieces of paper in the pop-up to create a new annotation. Name this one “Posterior Suture Lines,” and select a new color from the other annotation. I went with a pink!
+- You will want to draw another Y, but this time it will be upside down.
+![Screen Shot 2022-06-22 at 2 29 22 PM](https://user-images.githubusercontent.com/106686527/175756413-0194fbf9-0fe4-4111-9162-f39d18d74bd9.png)
+- Use the knife tool again, and cut out sections of your upside down Y, and change those sections to your Suture Lines material.
+![Screen Shot 2022-06-22 at 2 38 02 PM](https://user-images.githubusercontent.com/106686527/175756434-524eeda0-8ae4-4ebf-8cbb-408f8fe67c1c.png)
 
-### Cut Suture Lines Out 
-![Screen Shot 2022-06-22 at 2 36 24 PM](https://user-images.githubusercontent.com/106686527/175160370-4ff5c63a-0811-4420-817a-0029f8105c49.png)
-![Screen Shot 2022-06-22 at 2 43 00 PM](https://user-images.githubusercontent.com/106686527/175160409-33210e8c-42f3-4c17-aeb3-9e68613f72d2.png)
-![Screen Shot 2022-06-22 at 2 45 55 PM](https://user-images.githubusercontent.com/106686527/175160429-8e675382-b1cd-4f8c-8914-7f18dbb12ca7.png)
-![Screen Shot 2022-06-22 at 2 59 49 PM](https://user-images.githubusercontent.com/106686527/175160434-5769a617-6374-4286-ba30-416fbd0b0692.png)
+### Connecting Your Suture Lines
+- Suture lines wrap around and connect on both sides of the lens, so we will want ours to do the same.
+- Going back to our suture lines material in the material properties section (the bottom red sphere), click “Select.” If you are oriented correctly (facing one side of the lens so that it looks like a circle), you will see faint orange sections peeking out from the other side.
+ ![Screen Shot 2022-06-22 at 2 43 00 PM](https://user-images.githubusercontent.com/106686527/175756475-ceb18a79-8ade-42d3-9c3d-27d4ed74e481.png)
+ - Using the annotation tool again, draw lines originating from the orange sections, and connect them to the already present suture lines on that side.
+ - Then, use your knife tool and along your drawing, cut out your suture lines.
+![Screen Shot 2022-06-22 at 2 45 55 PM](https://user-images.githubusercontent.com/106686527/175756500-8d9df311-c87d-4dcf-a8ee-5cf3c16b4fb7.png)
+ - Select the faces of your newly cut suture lines, and assign them to the Suture Lines material
+- There you have it! Your first suture lines! I do suggest marking every line you make and filling it in as it can become difficult to distinguish a suture line from a line that denotes the geometry of the sphere.
 
-
-### Change Material
-![Screen Shot 2022-06-22 at 2 59 49 PM](https://user-images.githubusercontent.com/106686527/175160508-9c61fffb-1b67-4b5a-a727-1c8b05db6b26.png)
-![Screen Shot 2022-06-22 at 11 56 32 AM](https://user-images.githubusercontent.com/106686527/175160597-ac91e494-911a-4ea2-a3c7-0a2aeb49caab.png)
-
+### Making the Rest of the Suture Lines
+- Now, using the annotation tool, stay on one side of the lens, and draw more suture lines branching off from your Y. It doesn’t have to be symmetrical as these patterns are unique to each human. 
+- Again, use the knife tool to cut out sections following your drawn suture lines.
+- Once you’re done, you should have something like this.
+![Screen Shot 2022-06-22 at 11 56 32 AM](https://user-images.githubusercontent.com/106686527/175756847-58502d36-dff4-4a18-944d-3a4dbf55b06a.png)
+- Select the faces of your suture lines and then change the material from “Lens” to “Suture Lines.”
+- Then, switch to the other side of the lens, go back to our suture lines material in the material properties section (the bottom red sphere), click “Select.” You should see orange marks on the edge of your lens from the suture lines you drew on the other side. If you don’t see them, then your cuts likely didn’t make it all the way to the edge of the lens. Simply go back to the other side of the lens, and make sure the cut makes it completely through the last section of the lens. 
+- Connect the orange marks to the Y on the other side of the lens with the annotation tool, cut the lines out with the knife tool, and then switch the material to Suture Lines in the Material Properties Editor. 
+- You should have something like this if you switch to Viewport Shading.
+![Screen Shot 2022-06-22 at 12 56 42 PM](https://user-images.githubusercontent.com/106686527/175756804-5c3dcfec-4aca-4f79-af52-317b15ff4f79.png)
+- There you have it! The human lens built in Blender.
 
