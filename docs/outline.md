@@ -8,10 +8,10 @@ https://www.blender.org
 
 ## Draw 2 Spheres
 
-- Delete the default cube
+- Delete the default cube by clicking on it (if it is not already highlighted in orange), pressing X on your keyboard, and clicking "Delete" on the pop-up.
 - In the upper left, click on “Add” -> “Mesh” -> “UV Sphere”
 
-![Screen Shot 2022-06-22 at 4 10 39 PM](https://user-images.githubusercontent.com/106686527/175163120-eba58310-12ab-4fdf-a5f0-04c56a80587c.png)
+![Screen Shot 2022-06-26 at 9 15 06 PM](https://user-images.githubusercontent.com/106686527/175853356-c4f0c47f-7a15-4c3f-a707-64780ea89340.png)
 
 - Right click on the sphere and select “Shade Smooth.” This will take away the geometric planes of the UV sphere and will give you something that looks more like a ball.
 
@@ -19,10 +19,16 @@ https://www.blender.org
 
 - Press Ctrl+C, then Ctrl+V to get an identical sphere in the same spot The only difference you will likely see is that the sphere is highlighted in a darker orange. This is fine! Both spheres are present, but just in the same location, making it look like one sphere. If you really want to make sure though, in the upper right corner, you'll see a list of all the objects in your scene such as the light, camera, and, hopefully!, two spheres.
 
+![Screen Shot 2022-06-26 at 9 17 21 PM](https://user-images.githubusercontent.com/106686527/175853560-29d1bbd8-fec2-4c19-b177-d5dd8cfe9723.png)
+
+
 ## Overlap The Spheres
 - In the upper right of your viewport, there is a three pronged stick labelled with X-Y-Z. This controls the orientation of your view. For now, click on the Y ball.
+![image](https://user-images.githubusercontent.com/106686527/175853891-00c2d4ac-9407-4524-b361-db950ea24bc8.png)
+
 - Go to the list in the upper right corner and select one of the spheres (it doesn’t matter which one). 
-- Then, go to the properties editor just below and click on the orange square that has lines around its corners: the object properties tab. 
+- Then, go to the properties editor (on the right just underneath the list of your objects) and click on the orange square that has lines around its corners: the object properties tab. ![image](https://user-images.githubusercontent.com/106686527/175853933-746fc25a-ec89-4186-9017-9a043324077c.png)
+
 - In the “Transform” drop down menu, set the “Z” location to be 0.4.
 - Repeat the last three steps for the second sphere, but now set the “Z” location to be -0.6.
 - You should have something like this.
@@ -31,41 +37,44 @@ https://www.blender.org
 
 ## Shape the 2 Spheres
 - Now, below the “Location” section in the “Transform” tab, there will be the “Scale” section. The human eye lens is not symmetrical as you can see. 
+
 ![Schematic_diagram_of_the_human_eye_en svg](https://user-images.githubusercontent.com/106686527/175165358-9f389b1e-87d2-4de7-bc86-a4e01f908c11.png)
-(https://user-images.githubusercontent.com/106686527/175165097-a80794ce-79f5-4458-849d-52cfb9566a24.png)](https://en.wikipedia.org/wiki/Lens_%28anatomy%29) https://en.wikipedia.org/wiki/Lens_%28anatomy%29
+(https://en.wikipedia.org/wiki/Lens_%28anatomy%29) 
 - To get a similar effect in Blender, increase the “Z” component of the sphere (using scale) for the top sphere and decrease the “X” and “Y” component. The X and Y component should be scaled to the same amount to keep a circular shape. This will lengthen the sphere vertically and make it “pointier” at the bottom.
-- For the bottom sphere, increase the “X” and “Y” and decrease the “Z” for a flatter top. This may seem counterintuitive, but the top sphere creates the bottom part of the lens, and the bottom sphere creates the top part of the lens.
-- Don’t worry about accuracy when scaling as the human lens stretches and shrinks through a process called accommodation.
+- For the bottom sphere, increase the “X” and “Y” and decrease the “Z” for a flatter top. 
+- The last two steps may seem counterintuitive, but the top sphere creates the bottom part of the lens, and the bottom sphere creates the top part of the lens since we are taking the two intersections of the spheres. If this doesn't make sense quite yet, it might once we form the lens.
+- Don’t worry about accuracy when scaling as the human lens stretches and shrinks as the eye focuses on something close or far away through a process called accommodation. This means that there are no set measurements of the lens, so our only goal for now will be to get the general shape.
 
 ![Screen Shot 2022-06-20 at 9 44 27 PM](https://user-images.githubusercontent.com/106686527/175166041-796a1568-e73a-4b31-aacf-a0312afe3156.png)
 
 ## Take Sphere Intersections
-- Click the blue wrench, right underneath the properties editor, which is the “Properties Modifier.”
-- Have either of the spheres selected and press “Add Modifier” -> “Boolean.”
-- Select “Intersect.”
+- Click the blue wrench, right underneath the properties editor![image](https://user-images.githubusercontent.com/106686527/175854508-084ad21b-4c5b-4ab9-9cf8-d9b830823fc2.png): the “Properties Modifier.”
+- Have either of the spheres selected and press “Add Modifier” -> “Boolean” (under "Generate").
+- Select “Intersect.” 
 - In the “Object” section, select the eyedropper-looking tool, and press the upper sphere.
-- The sphere you didn’t click on will look like it was deleted.
-- Click on the down arrow next to the camera in the very top of the “Boolean” tab and press “apply.”
+- The sphere you didn’t click on with the eyedropper tool will look like it was deleted. What happened is that only the part of the sphere that "intersects" the other sphere was kept. The other part was whisked away!
+- Click on the down arrow next to the camera in the very top of the “Boolean” tab and press “apply.” ![image](https://user-images.githubusercontent.com/106686527/175854998-118a89d5-bb45-4072-8928-3a41deb70b8f.png) 
+- If you skip this step, the shape from the last step will be deleted, and you will just be left with the remaining sphere.
 - Select the sphere that is still intact and delete it.
-- You will see something like this.
-- Go to the properties editor and click on the object properties.
-- Set the Y rotation to be 90 degrees, set the X location to -0.4, and you will see the following image.
+- ![Screen Shot 2022-06-20 at 9 52 55 PM](https://user-images.githubusercontent.com/106686527/175156178-b4749b7a-b4b4-44e2-911b-0fb27fd35274.png)
+- Go to the properties editor and click on the object properties![image](https://user-images.githubusercontent.com/106686527/175853933-746fc25a-ec89-4186-9017-9a043324077c.png).
+- Set the Y rotation to be 90 degrees, set the X location to -0.4 for orientation purposes.
 
-![Screen Shot 2022-06-20 at 9 52 55 PM](https://user-images.githubusercontent.com/106686527/175156178-b4749b7a-b4b4-44e2-911b-0fb27fd35274.png)
 
 
 ## Set Material to be Transparent
 
 ![Screen Shot 2022-06-22 at 1 49 48 PM](https://user-images.githubusercontent.com/106686527/175166856-dda844b3-f152-413b-b2ec-9a656bab3c02.png)
 
-- Click on the red sphere near the bottom (“Material Properties”) and click “New.”
+- Click on the red sphere near the bottom ![image](https://user-images.githubusercontent.com/106686527/175855327-34a036c3-39e9-47b0-a39d-69afa1525591.png)
+ (“Material Properties”) and click “New.”
 - In the “Surface” section under “Surface,” click on what may by default say “Principled BSDF” and change it to “Refraction BSDF.”
 - Set the “Roughness” to 0.
 - Set the IOR (index of refraction) to 1.386 to match that of the human lens.
 - You won’t see anything different now, but change your viewing (the spheres in the upper right) to “Viewport Shading” (the third sphere from the left).
 - Before checking, go back to the Modifier Properties (the blue wrench in the properties editor) and add a “Subdivision Surface” modifier to smooth out any dimples on the edge of the lens.
-
-
+- What is happening is that Blender is taking the environment from one of their other workspaces ("Shading") and placing the lens in that environment while keeping you in the current one ("Layout") to give the impression of transparency. To see for yourself, go up to the tippy-top where you will see a list of Blender's workspaces like "Layout" (your current one), "Modeling," "Sculpting," and (what you will want to click on) "Shading."
+![image](https://user-images.githubusercontent.com/106686527/175856013-f51eb4c0-f37d-468d-831e-45ddc951d6e2.png)
 
 ## Add Suture Lines
 
@@ -76,15 +85,16 @@ https://entokey.com/the-lens/
 ### Making the Main Anterior (front-facing) Suture Lines
 ![Screen Shot 2022-06-22 at 2 02 29 PM](https://user-images.githubusercontent.com/106686527/175756017-28990a66-cb20-4f66-915f-4f2613b9f253.png)
 - Switch back to the “Viewport Shading” view (second sphere in the top right).
-- Switch from “Object Mode” to “Edit Mode” in the top left.
+- Switch from “Object Mode” to “Edit Mode” in the top left.![image](https://user-images.githubusercontent.com/106686527/175856133-ef236313-1be6-446d-8448-5dd1ef360b09.png)
 - Click away from the object or press Alt+A to deselect the object.
 - Orient yourself so that you’re facing the flatter part of the lens (I’ve found that using the X-Y-Z tool in the upper right is helpful; for me, I clicked X to face the flat part of my lens).
-- Using the annotation tool, draw a Y shape centered on the center of the circle. 
-- Go up and click “Note” in the upper left corner right next to annotation and whatever color your pen is at the moment.
+- Using the annotation tool, on the left, the pen amongst all the rectangles![image](https://user-images.githubusercontent.com/106686527/175856197-2c427e5b-65de-437e-851a-62f940995c90.png), draw a Y shape centered on the center of the circle. 
+- Go up and click “Note” in the upper left corner right next to annotation and whatever color your pen is at the moment.![image](https://user-images.githubusercontent.com/106686527/175856266-73deecff-9247-45ca-ac90-d74137abcd29.png)
 - Change the name of the annotation from “Annotation” to “Anterior Suture Lines,” you should be able to do this from the first box.
 
 ![Screen Shot 2022-06-24 at 9 24 55 PM](https://user-images.githubusercontent.com/106686527/175756395-d0da2c42-50bc-42bf-bdfb-e728675d85c7.png)
-- Using the knife tool, cut out your Y. I did one cut above each part of the upper half of the Y, and two cuts surrounding the bottom half. 
+- Using the knife tool ![image](https://user-images.githubusercontent.com/106686527/175856307-8e265e10-a946-460e-8b03-4a8c438bdcc3.png)
+, cut out your Y. I did one cut above each part of the upper half of the Y, and two cuts surrounding the bottom half. 
 - I only outlined the sides of the Y because now we will change the material of those sections.
 - In the properties editor, click on the bottom most red sphere (“Material Properties”) and click on the plus sign next to your array of already there materials. 
 - Then, select the “New” button.
