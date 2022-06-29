@@ -6,6 +6,7 @@
 ## Download Blender
 ![image](https://user-images.githubusercontent.com/106686527/175160863-447fe426-adad-4917-9e5c-40c116f97815.png)
 https://www.blender.org
+- Blender is a free, open-source software where you can build 3D models, shade them, and even later animate your creation! Because of how powerful it is and its many different types of lights, we will be using Blender in our project. Plus, it has a monkey! To download Blender, click on the link above and follow the website's instructions. If you want a general guide to how to use Blender, they also have a YouTube playlist where they walk you through the fundamentals on how to use their software. Simply search "Blender fundamentals" into Youtube. The playlist should be the first result, below the ad of course. 
 
 ## Draw 2 Spheres
 
@@ -82,6 +83,9 @@ https://www.blender.org
 ### What Are Suture Lines?
 ![B9780323036566500160_f11-07-9780323036566](https://user-images.githubusercontent.com/106686527/175158656-81abdab4-ea4d-401e-aa37-2cc60d882b69.jpg)
 https://entokey.com/the-lens/
+
+Suture lines are transparent, ribbon like structures that are part of the human lens that can explain the reason we see point lights as, well, pointy. They affect the light coming into the eye through a process called diffraction. They are made out of lens fibers and have the general shape as seen above, with two Y shapes (one on the front and one upside down behind) being the center of where the ribbons spring out from. Suture lines are possibly the whole reason for the star images phenomenon, so the next few steps may be daunting, but are crucial. To read more about suture lines and the structure of the eye in general, click here:
+https://www.sciencedirect.com/science/article/pii/S1888429609700184
 
 ### Making the Main Anterior (front-facing) Suture Lines
 ![Screen Shot 2022-06-22 at 2 02 29 PM](https://user-images.githubusercontent.com/106686527/176087273-f77f5bd9-fa62-4c06-a9ef-483233b2b351.png)
