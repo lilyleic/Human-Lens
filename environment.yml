@@ -1,0 +1,13 @@
+name: human-lens
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - scikit-image=0.19.2
+  - numpy=1.22
+  - matplotlib
+  - scipy
+  - click
+  
+
