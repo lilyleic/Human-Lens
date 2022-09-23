@@ -13,3 +13,6 @@ In this notebook we will introduce how to use Jupyter notebooks and essential Py
 In this ntoebook we will cover the introduction given by 
 - [the crash course.](https://scikit-image.org/docs/0.19.x/user_guide/numpy_images.html) 
 - [image data types](https://scikit-image.org/docs/0.19.x/user_guide/data_types.html)
+
+## General Resources
+- [An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html)

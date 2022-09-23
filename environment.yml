@@ -9,5 +9,8 @@ dependencies:
   - matplotlib
   - scipy
   - click
+  - jupyterlab
+  - nodejs
+
   
 
