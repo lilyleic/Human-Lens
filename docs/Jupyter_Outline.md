@@ -4,7 +4,7 @@
 
 
 In this notebook we will introduce how to use Jupyter notebooks and essential Python syntax.
-- [HW 1](https://github.com/lilyleic/Human-Lens/blob/f017a078c2b6686aa1a2eaff9bde1578f825d558/scripts/hw01.ipynb)
+- [1](https://github.com/lilyleic/Human-Lens/blob/f017a078c2b6686aa1a2eaff9bde1578f825d558/scripts/hw01.ipynb)
 - [HW 2](https://github.com/lilyleic/Human-Lens/blob/f017a078c2b6686aa1a2eaff9bde1578f825d558/scripts/hw02(1).ipynb)
 
 
